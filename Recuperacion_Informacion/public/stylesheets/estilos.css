@@ -1,0 +1,126 @@
+body{
+	background-color: #ccc;
+	color: white;
+}
+
+.titulo{
+	font-size: 50px;
+	font-family: 'Slabo 27px', serif;
+	text-shadow: 5px 5px 8px black;
+}
+
+.subTitulo{
+	font-size: 15px;
+	font-family: 'Slabo 27px', serif;
+}
+
+.icon{
+	font-size: 3em;
+	color: white;
+	padding: 10px;
+}
+
+.btn-defualt{
+	background-color: #125B;
+	color: white;
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+.btn-default:hover{
+	border: 3px dotted white;
+}
+
+.navbar-search{
+	width: 100%;
+}
+
+.fondo_busqueda{
+	background: #124A;
+	box-shadow: 0 5px 20px #888888;
+	
+}
+
+.none_link{
+	text-decoration: none;
+	text-shadow: 5px 5px 8px black;
+}
+
+.caja:focus{
+	box-shadow: 5px 5px 5px black;
+}
+
+.navbar_inicio{
+	background-color: #124A;
+	color: white;
+}
+
+.underline{
+	text-decoration: underline;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+.container-fluid{
+	margin-bottom: 2em;
+}
+
+#submit_inicio{
+	padding: 5px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.shadow{
+	text-shadow: 1px 3px 5px black;
+}
+
+.modal-body{
+	color: black;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.titulo_rank{
+	text-decoration: underline;
+	text-shadow: none;
+	font-size: 1.5em;
+	color: #124A;
+}
+
+.tarjeta{
+	width: 100%;
+	padding: 20px;
+	background-color: #124A;
+	border-radius: 25px;
+	border: 5px solid white;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.tarjeta:hover{
+	box-shadow: -5px 5px 10px black;
+}
+
+hr{
+	background-color: #ccc;
+	color: #ccc;
+}
+
+.encabezado{
+	cursor: pointer;
+	width: 100%;
+}
+
+.contenido{
+	display: none;
+}
+
+.error{
+	border: 3px solid red;
+}
+
+table{
+	color: #124A;
+	font-size: 1.5em;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "info",
+  "version": "1.0.0",
+  "description": "information retrival ",
+  "main": "index.js",
+  "dependencies": {
+    "hashtable-js": "^1.0.1",
+    "natural": "^0.5.4",
+    "stopword": "^0.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "hi"
+  },
+  "author": "ivan0063",
+  "license": "ISC"
+}

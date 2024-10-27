@@ -1,0 +1,36 @@
+extends ./layout/head.pug
+
+block contenido
+	.container-fluid
+		.row.fondo_busqueda
+			.col-sm-1
+				.navbar-search.b-inline
+					a(href="/").none_link
+						i.icon.fa.fa-search.icon(aria-hidden="true")
+							p.subTitulo Busqueda
+			.col-sm-11(style="padding: 10px;")
+				form(action="/busqueda",methed="get").form-inline
+					.form-group.w-50(style="margin: 10px;")
+						input.form-control.w-100.caja(type="text",name="buscar",value=query)
+					.form-group
+						input.form-control.btn.btn-defualt(type="submit",value="Buscar")
+					input(type="hidden",name="funcion_rank",value="simCos")
+	.container
+		.row
+			p.text-muted.float-left.font-weight-bold Cerca de #{res_totales} resultados (0.#{total_time} segundos)
+		each i in [0,1,2,3,4,5,6,7,8,9]
+			.row
+				.col-sm-12
+					.tarjeta
+						.encabezado
+							i.fa.fa-arrow-down.float-right.shadow(aria-hidden="true")
+							p #{i + 1}) Documento: 
+								span.font-weight-bold #{resultado[i].documento}
+						.contenido
+							hr
+							p Rank: 
+								span.font-weight-bold #{resultado[i].rank}
+							p Palabras: 
+								span.font-weight-bold #{resultado[i].contenido.length}
+							p Contenido:  
+								span.font-weight-bold #{resultado[i].contenido}

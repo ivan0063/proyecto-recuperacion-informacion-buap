@@ -1,0 +1,57 @@
+extends ./layout/head.pug
+
+block contenido
+	div.container-fluid
+		div.row.navbar_inicio
+			div.col-sm-6
+				p.float-left Terminos Indice Cargados:
+					p.underline.font-weight-bold(data-toggle="modal",data-target="#terminos") #{terminos.length}
+			div.col-sm-6
+				p.float-right Numero de Documentos en el Copus: 
+					span.underline.font-weight-bold #{corpus_length}
+					
+	div.container
+		form(action='/busqueda',methed='get',style='width:100%;' id="form-busqueda")
+			div.row
+				div.col-sm-12
+					p.text-center.font-weight-bold.titulo.mb-5(style="font-size: 5em;") ¡Recuperación #{"\n"} De #{"\n"} Información!
+
+				div.col-sm-12.text-center
+					div.form-group.mb-4
+						input.form-control.caja(type="text",name="buscar",style="width:100%;")
+
+					div.form-group.mx-auto(style='width: 80%')
+						input#submit_inicio.form-control.btn.btn-defualt.btn-block(type="button",value="Buscar")
+			input(type="hidden",name="p",value="0")
+
+			div.row.mt-3.font-weight-bold.shadow
+				div.col-sm-12.col-md-6
+					p.titulo_rank Funcion de Ranking
+					div.radio.ml-4
+						label
+							input(type='radio',name='funcion_rank',value='simCos',checked) 
+							| Fórmula del Coseno
+					div.radio.ml-4
+						label
+							input(type='radio',name='funcion_rank',value='producto_escalar')
+							| Producto Escalar
+					div.radio.ml-4
+						label
+							input(type='radio',name='funcion_rank',value='simDice')
+							| Coeficiente de Dice
+					div.radio.ml-4
+						label
+							input(type='radio',name='funcion_rank',value='simJacc')
+							| coeficiente Jaccard
+
+	
+	.modal.fade#terminos
+		.modal-dialog
+			.modal-content
+				.modal-header
+					h1.text-success Terminos Indice
+					button.close(type="button" data-dismiss="modal") &times;
+				.modal-body
+					ul
+						each i in terminos
+							li #{i}

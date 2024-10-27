@@ -1,0 +1,12 @@
+$(document).ready(function(){
+	$('.tarjeta').click(function(){
+		if($(this).find(".fa").hasClass("fa-arrow-down")){
+			$(this).find(".fa").removeClass("fa-arrow-down");
+			$(this).find(".fa").addClass("fa-arrow-up");
+		}else{
+			$(this).find(".fa").removeClass("fa-arrow-up");
+			$(this).find(".fa").addClass("fa-arrow-down");
+		}
+		$(this).find(".contenido").toggle();
+	});
+});

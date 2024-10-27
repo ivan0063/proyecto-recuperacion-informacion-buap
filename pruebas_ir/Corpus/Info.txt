@@ -1,0 +1,24 @@
+Document Files
+
+Each document includes 11 fields as follows:
+
+Paper Number
+    The first two digits give the year of publication, and the rest three digits range from 1 to the number of docs published that yea 
+Record Number
+    serial id number varying from 1 to 1,239. 
+Medline Acession Number
+    CF is a subset of the MEDLINE database. 
+Author(s)
+Title
+Source
+    Bibliographic citation of source. 
+Major Subjects
+    The Medical Subject Headings (MeSH) and subheadings representing the major subjects of the document. The Medical Subject Headings are shown in capital letters and have been assigned by expert indexers. The two-letter symbols are subject subheadings, also assigned manually from a controlled vocabulary (see the MeSH vocabulary published by the National Library of Medicine). 
+Minor Subjects
+    The Medical Subject Headings (MeSH) and subheadings representing the minor subjects of the document. The Medical Subject Headings are shown in capital letters and have been assigned by expert indexers. The two-letter symbols are subject subheadings, also assigned manually from a controlled vocabulary (see the MeSH vocabulary published by the National Library of Medicine) 
+Abstract/Extract
+    The abstract of the document, or in the case of a document with no published abstract, an extract from text. 
+References
+    The complete list of references appearing in the document, excluding private comunications and unpublished documents 
+Citations
+    A comprehensive list of citations to the document, as indexed in the SCISEARCH/DIALOG files 
